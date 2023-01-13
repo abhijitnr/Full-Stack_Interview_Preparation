@@ -202,3 +202,210 @@ An URL is encoded to convert non-ASCII characters into a format that can be used
 ## 28) Does a `<!DOCTYPE html>` tag is a HTML tag?
 
 No, the `<!DOCTYPE html>` declaration is not an HTML tag. There are many type of HTML e.g. HTML 4.01 Strict, HTML 4.01 Transitional, HTML 4.01 Frameset, XHTML 1.0 Strict, XHTML 1.0 Transitional, XHTML 1.0 Frameset, XHTML 1.1 etc. So, `<!DOCTYPE html>` is used to instruct the web browser about the HTML page.
+
+## 29) What is the canvas element in HTML5?
+
+The `<canvas>` element is a container that is used to draw graphics on the web page using scripting language like JavaScript. It allows for dynamic and scriptable rendering of 2D shapes and bitmap images. There are several methods in canvas to draw paths, boxes, circles, text and add images. For Example:
+
+```
+<canvas id="myCanvas1" width="300" height="100" style="border:2px solid;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+```
+
+## 30) What is SVG?
+
+HTML SVG is used to describe the two-dimensional vector and vector/raster graphics. SVG images and their behaviors are defined in XML text files. So as XML files, you can create and edit an SVG image with the text editor. It is mostly used for vector type diagrams like pie charts, 2-Dimensional graphs in an X, Y coordinate system.
+
+```
+<svg width="100" height="100">
+ <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="4" fill="red" />
+</svg>
+```
+
+## 31) What are the different new form element types in HTML 5?
+
+Following is a list of 10 frequently used new elements in HTML 5:
+
+- Color
+- Date
+- Datetime-local
+- Email
+- Time
+- Url
+- Range
+- Telephone
+- Number
+- Search
+
+## 32) Is there any need to change the web browsers to support HTML5?
+
+No. Almost all browsers (updated versions) support HTML 5. For example Chrome, Firefox, Opera, Safari, IE.
+
+## 33) Which type of video formats are supported by HTML5?
+
+HTML 5 supports three types of video format:
+
+- mp4
+- WebM
+- Ogg
+
+## 34) Is audio tag supported in HTML 5?
+
+Yes. It is used to add sound or music files on the web page. There are three supported file formats for HTML 5 audio tag.
+
+- mp3
+- WAV
+- Ogg
+  Let's see the code to play mp3 file using HTML audio tag.
+
+```
+<audio controls>
+<source src="koyal.mp3" type="audio/mpeg">
+Your browser does not support the html audio tag.
+</audio>
+```
+
+Instead of koyal.mp3, you can pass any mp3 file name.
+
+## 35) What is the difference between progress and meter tag?
+
+The progress tag is used to represent the progress of the task only while the meter tag is used to measure data within a given range.
+
+## 36) What is the use of figure tag in HTML 5?
+
+The figure tag is used to add a photo in the document on the web page. It is used to handle the group of diagrams, photos, code listing with some embedded content.
+
+`<p>`The Taj Mahal is widely recognized as "the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage."`</p>`
+
+```
+<figure>
+  <img src="htmlpages/images/tajmahal.jpg" alt="Taj Mahal"/>
+</figure>
+```
+
+## 37) What is the use of figcaption tag in HTML 5?
+
+The `<figcaption>` element is used to provide a caption to an image. It is an optional tag and can appear before or after the content within the `<figure>` tag. The `<figcaption>` element is used with `<figure>` element and it can be placed as the first or last child of the `<figure>` element.
+
+```
+<figure>
+<img src="htmlpages/images/tajmahal.jpg" alt="Taj Mahal"/>
+<figcaption>Fig.1.1 - A front view of the great Taj Mahal in Agra.</figcaption>
+</figure>
+```
+
+## 38) What is button tag?
+
+The button tag is used in HTML 5. It is used to create a clickable button within the HTML form on the web page. It is generally used to create a "submit" or "reset" button. Let's see the code to display the button.
+
+```
+<button name="button" type="button">Click Here</button>
+```
+
+## 39) What is the use of details and summary tag?
+
+The details tag is used to specify some additional details on the web page. It can be viewed or hidden on demand. The summary tag is used with details tag.
+
+## 40) What is datalist tag?
+
+The HTML 5 datalist tag provides an autocomplete feature on the form element. It facilitates users to choose the predefined options to the users to select data.
+
+```
+<label>
+Enter your favorite cricket player: Press any character<br />
+<input type="text" id="favCktPlayer" list="CktPlayers">
+<datalist id="CktPlayers">
+<option value="Sachin Tendulkar">
+<option value="Brian Lara">
+<option value="Jacques Kallis">
+<option value="Ricky Ponting">
+<option value="Rahul Dravid">
+<option value="Shane Warne">
+<option value="Rohit Sharma">
+<option value="Donald Bradman">
+<option value="Saurav Ganguly ">
+<option value="AB diVilliers">
+<option value="Mahendra Singh Dhoni">
+<option value="Adam Gilchrist">
+</datalist>
+</label>
+```
+
+## 41) How are tags migrated from HTML4 to HTML5?
+
+![](./assets/html4to5.png)
+Header and Footer Example
+
+- **HTML 4 Header and Footer:**
+
+```
+<div id="header">
+  <h1>Monday Times</h1>
+</div>
+.
+.
+.
+<div id="footer">
+  <p>&copy; JavaTpoint. All rights reserved.</p>
+</div>
+```
+
+- **HTML 5 Header and Footer:**
+
+```
+<header>
+  <h1>Monday Times</h1>
+</header>
+.
+.
+.
+<footer>
+  <p>© JavaTpoint. All rights reserved.</p>
+</footer>
+```
+
+Menu Example
+
+- **HTML 4 Menu:**
+
+```
+<div id="menu">
+  <ul>
+    <li>News</li>
+    <li>Sports</li>
+    <li>Weather</li>
+  </ul>
+</div>
+```
+
+- **HTML 5 Menu:**
+
+```
+<nav>
+  <ul>
+    <li>News</li>
+    <li>Sports</li>
+    <li>Weather</li>
+  </ul>
+</nav>
+```
+
+## 42) If I do not put <!DOCTYPE html> will HTML 5 work?
+
+No, the browser will not be able to identify that it is an HTML document and HTML 5 tags do not function properly.
+
+## 43) What is the use of the required attribute in HTML5?
+
+It forces a user to fill text on the text field or text area before submitting the form. It is used for form validation.
+
+Example:
+
+Name: `<input type="text" name="name" required>`
+
+## 44) What are the new `<input>` types for form validation in HTML5?
+
+The new input types for form validation are email, URL, number, tel, and date.
+
+Example:
+`<input type="email">`

@@ -409,3 +409,27 @@ The new input types for form validation are email, URL, number, tel, and date.
 
 Example:
 `<input type="email">`
+
+## 45) Difference between block-elements and inline-elements ?
+
+### Block-Elements :
+
+- A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+- A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+- Two commonly used block elements are: `<p>` and `<div>`.
+- Here are the block-level elements in HTML:
+
+```
+<address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>,<figcaption>, <figure>, <footer>, <form>, <h1>-<h6>, <header>, <hr>, <li>, <main>, <nav>, <noscript>, <ol>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, <video>
+```
+
+### Inline-Elements :
+
+- An inline element does not start on a new line.
+- An inline element only takes up as much width as necessary.
+- This is a `<span>` element inside a paragraph.
+- Here are the inline elements in HTML:
+
+```
+<a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, <cite>, <code>, <dfn>, <em>, <i>, <img>, <input>, <kbd>, <label>, <map>, <object>, <output>, <q>, <samp>, <script>, <select>, <small>, <span>, <strong>, <sub>, <sup>, <textarea>, <time>,<tt>, <var>
+```

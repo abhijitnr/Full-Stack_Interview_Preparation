@@ -67,7 +67,7 @@ HTML elements communicate to the browser to render text. When the elements are e
 
 ## 10) What is semantic HTML?
 
-Semantic HTML is a coding style. It is the use of HTML markup to reinforce the semantics or meaning of the content. For example: In semantic HTML `<b> </b>` tag is used for bold statement as well as `<i> </i>` tag is used for italic. Instead of these we use `<strong> </strong>` and `<em> </em>` tags.
+Semantic HTML is a coding style. It is the use of HTML markup to reinforce the semantics or meaning of the content. For example: In semantic HTML `<b> </b>` tag is not used for bold statement as well as `<i> </i>` tag is not used for italic. Instead of these we use `<strong> </strong>` and `<em> </em>` tags.
 
 ## 11) What is an image map?
 

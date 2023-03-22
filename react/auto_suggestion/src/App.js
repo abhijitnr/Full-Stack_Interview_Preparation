@@ -1,13 +1,10 @@
 import "./App.css";
-
-import Search from "./components/Search";
-import Suggestions from "./components/Suggestions";
+import Form from "./components/form";
 
 function App() {
   return (
     <div className="App">
-      <Search />
-      <Suggestions />
+      <Form />
     </div>
   );
 }

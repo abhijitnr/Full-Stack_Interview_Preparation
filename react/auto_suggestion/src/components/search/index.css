@@ -1,0 +1,29 @@
+.wrapper {
+  width: 300px;
+  position: relative;
+}
+
+.suggestions-wrapper {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestion {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.suggestion:hover {
+  background-color: inherit;
+}
+
+.search_box {
+  width: 100%;
+}

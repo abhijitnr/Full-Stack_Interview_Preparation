@@ -59,50 +59,43 @@ However, it is recommended to avoid using the `<marquee>` tag in modern web deve
 In HTML , there are three types of lists: ordered, unordered and definition list.
 
 - <b>Unordered Lists :</b> An unordered list is a list of items that are marked with bullet points (or some other marker) to indicate each item. The unordered list is created using the `<ul>` tag, and each item in the list is created using the `<li>` tag. Here is an example:
-  <br/>
-  `<ul>`
-  <br/>
-  `<li>Item 1</li>`
-  <br/>
-  `<li>Item 2</li>`
-  <br/>
-  `<li>Item 3</li>`
-  <br/>
-  `</ul>`
+
+  ```
+  <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+  </ul>
+  ```
 
 - <b>Ordered Lists :</b> An ordered list is a list of items that are numbered to indicate each item's order. The ordered list is created using the `<ol>` tag, and each item in the list is created using the `<li>` tag. Here is an example:
-  <br/>
-  `<ol>`
-  <br/>
-  `<li>First Item</li>`
-  <br/>
-  `<li>Second Item</li>`
-  <br/>
-  `<li>Third Item</li>`
-  <br/>
-  `</ol>`
+
+  ```
+   <ol>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+   </ol>
+  ```
 
 In both types of lists, you can nest other lists and other HTML elements inside each list item by using the appropriate tags. It's also possible to change the appearance of the list markers or numbers by using CSS.
 
 - <b>Definition list :</b> a definition list is a list of terms and their corresponding definitions. It is created using the `<dl>` tag, and each term and definition pair is created using the `<dt>` and `<dd>` tags, respectively.Here is an example of a definition list:
-  <br/>
-  `<dl>`
-  <br/>
-  `<dt>HTML</dt>`
-  <br/>
-  `<dd>Hypertext Markup Language - the standard markup language used to create web pages.</dd>`
-  <br/>
-  `<dt>CSS</dt>`
-  <br/>
-  `<dd>Cascading Style Sheets - the language used to describe the presentation of web pages.</dd>`
-  <br/>
-  `<dt>JavaScript</dt>`
-  <br/>
-  `<dd>A programming language used to create interactive and dynamic web pages.</dd>`
-  <br/>
-  `</dl>`
 
-n the example above, each term (HTML, CSS, and JavaScript) is defined using the `<dt>` tag, and its corresponding definition is provided using the `<dd>` tag.
+  ```
+  <dl>
+     <dt>HTML</dt>
+     <dd>Hypertext Markup Language - the standard markup language used to create web pages.</dd>
+
+     <dt>CSS</dt>
+     <dd>Cascading Style Sheets - the language used to describe the presentation of web pages.</dd>
+
+     <dt>JavaScript</dt>
+     <dd>A programming language used to create interactive and dynamic web pages.</dd>
+  </dl>
+  ```
+
+In the example above, each term (HTML, CSS, and JavaScript) is defined using the `<dt>` tag, and its corresponding definition is provided using the `<dd>` tag.
 
 <p>
 Definition lists are commonly used to present glossary or dictionary-like information on a web page. They can also be styled using CSS to enhance their appearance and readability.
@@ -126,3 +119,167 @@ HTML provides several formatting elements and attributes to help developers cont
 - Font size and color - The `<font>` tag can be used to specify the font size and color of text.
 
 It's important to note that some formatting elements, such as the `<font>` tag, are now deprecated in HTML5 and should be avoided. Instead, modern web development practices rely on Cascading Style Sheets (CSS) to apply formatting and styles to HTML elements.
+
+# 8. How do you display a table in an HTML webpage?
+
+To display a table on an HTML webpage, you need to use the `<table>` tag, along with several other tags to define the structure and content of the table. Here are the basic steps to create a table:
+
+- Use the `<table>` tag to create a table.
+- Use the `<tr>` tag to create a table row.
+- Use the `<th>` tag to create a table header cell. This is typically used for the first row of the table to create column headings.
+- Use the `<td>` tag to create a table data cell. This is used to hold the actual data in the table.
+- Close the table cell and row tags using the `</th>`, `</td>`, and `</tr>` tags as appropriate.
+- Repeat steps 2-5 to create additional rows and cells as needed.
+- Close the table using the `</table>` tag.
+
+Here's an example of a simple table with two rows and two columns:
+
+```
+<table>
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+  </tr>
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+</table>
+```
+
+<p>
+In the example above, the first row contains the column headings, and the second and third rows contain the data. You can add additional rows and columns to create more complex tables as needed.
+</p>
+
+<p>
+It's also possible to add formatting and styles to tables using CSS, which can enhance their appearance and improve their readability.
+</p>
+
+# 9. How to create a hyperlink in HTML?
+
+To create a hyperlink in HTML, you need to use the `<a>` tag, which stands for "anchor". Here's the basic syntax for creating a hyperlink:
+
+```
+<a href="URL">Link text</a>
+```
+
+<p>
+In this syntax, the href attribute specifies the destination URL that the link should point to, and the "Link text" is the visible text that the user clicks on to follow the link.
+</p>
+
+Here's an example of how to create a hyperlink that points to the Google homepage :
+
+```
+<a href="https://www.google.com">Go to Google</a>
+```
+
+<p>
+When the user clicks on the "Go to Google" link, their web browser will navigate to the Google homepage.
+</p>
+
+You can also add additional attributes to the `<a>` tag, such as `target="_blank"` to open the link in a new window or tab, or `class` and `id` attributes for styling and scripting purposes.
+
+# 10. How do we insert a comment in HTML?
+
+In HTML, you can insert comments using the following syntax:
+
+```
+<!-- This is a comment -->
+```
+
+Anything within the `<!-- -->` tags will be treated as a comment and will not be displayed in the browser when the webpage is rendered. Comments are useful for adding notes or explanations to your code that are not meant to be seen by the user.
+
+Here's an example of how to use comments in HTML to annotate your code:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<!-- This is the meta description for the website -->
+	<meta name="description" content="Welcome to my website!">
+</head>
+<body>
+	<!-- This is the header section -->
+	<header>
+		<h1>My Website</h1>
+		<!-- This is the navigation menu -->
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- This is the main content area -->
+	<main>
+		<p>Welcome to my website! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat ligula sed mauris malesuada, in commodo nulla consectetur.</p>
+	</main>
+	<!-- This is the footer section -->
+	<footer>
+		<p>&copy; 2023 My Website</p>
+	</footer>
+</body>
+</html>
+```
+
+# 11. How do you insert a copyright symbol in HTML?
+
+To insert a copyright symbol in HTML, you can use the special character entity `&copy;` or the Unicode value `&#169;`.
+This will render as the copyright symbol: ©
+
+Both methods will work in most modern web browsers, but using the `&copy;` entity is generally preferred because it is more readable and easier to understand in your HTML code.
+
+# 12. What is semantic HTML?
+
+<p>
+Semantic HTML is a way of writing HTML that emphasizes the meaning and purpose of the content on a webpage, rather than just its presentation. In other words, semantic HTML uses HTML tags and attributes that convey the structure and meaning of the content, rather than just how it should look on the page.
+</p>
+Here are a few examples of semantic HTML tags:
+
+- `<header>` : This tag is used to define the header section of a webpage, which typically includes a logo, navigation menu, and other introductory content.
+- `<nav>` : This tag is used to define the navigation menu of a webpage, which typically includes links to other pages or sections within the website.
+- `<main>` : This tag is used to define the main content area of a webpage, which typically includes the primary content that the user is meant to read or interact with.
+- `<article>` : This tag is used to define a self-contained piece of content, such as a blog post, article, or news item.
+- `<section>` : This tag is used to define a section of related content within a webpage, such as a chapter in a book, a category of products in an online store, or a group of related blog posts.
+
+# 13. What is an image map?
+
+<P>
+An image map is an HTML element that allows you to define clickable areas within an image. Each clickable area, or "hotspot," can be linked to a different URL or action, allowing you to create interactive images that the user can click on to navigate to different pages or trigger events.
+</P>
+
+Image maps are typically created using the `<map>` and `<area>` tags. Here's an example of how to create an image map:
+
+```
+<img src="myimage.jpg" alt="My Image" usemap="#mymap">
+
+<map name="mymap">
+	<area shape="rect" coords="0,0,100,100" href="page1.html">
+	<area shape="circle" coords="200,200,50" href="page2.html">
+	<area shape="poly" coords="300,0,400,100,300,200" href="page3.html">
+</map>
+```
+
+In this example, the `<img>` tag includes the usemap attribute, which specifies the name of the map that defines the clickable areas. The `<map>` tag defines the map and includes one or more `<area>` tags, each of which defines a clickable area with a specific shape, size, and location (coords) and a URL or action ("href").
+
+<p>
+In this example, there are three clickable areas: a rectangle that links to "page1.html", a circle that links to "page2.html", and a polygon that links to "page3.html". When the user clicks on any of these areas, they will be taken to the corresponding URL or action.
+</p>
+
+# 14. Why do we use a style sheet in HTML?
+
+<p>
+We use a style sheet in HTML to separate the presentation of a webpage from its content. By using a style sheet, we can define the visual appearance and layout of a webpage in a separate file or section of code, rather than cluttering our HTML with styling information.
+</p>
+
+<p>
+There are several types of style sheets that can be used in HTML, including inline styles, internal styles, and external styles. External stylesheets are the most commonly used type of stylesheet, as they can be cached by the browser, which further improves performance.
+</p>
+
+# 15. How to create a nested webpage in HTML?

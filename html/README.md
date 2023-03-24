@@ -413,3 +413,227 @@ Also, keep in mind that using large images as background images can slow down th
 </p>
 
 # 21. What are the entities in HTML?
+
+In HTML, an "entity" is a special character or symbol that has a specific meaning in HTML code. Entities are used to represent characters that may not be easily or safely entered as normal text. Some common entities include:
+
+- `&` = represents the ampersand character `"&"`
+- `<` = represents the less-than symbol `"<"`
+- `>` = represents the greater-than symbol `">"`
+- `"` = represents the double quote character `"`
+- `'` = represents the single quote character `'`
+
+There are many other entities available in HTML, including characters with diacritical marks, mathematical symbols, and special characters for different languages. To use an entity in HTML, you can simply type the entity name (including the `"&"` and `";"`) in place of the character you want to represent.
+
+# 22. Why is a URL encoded in HTML?
+
+<P>
+A URL (Uniform Resource Locator) is encoded in HTML to ensure that the URL can be correctly interpreted by web browsers and other software applications.
+</P>
+
+<P>
+URL encoding involves replacing certain characters in the URL with a sequence of characters that can be transmitted safely over the internet. For example, spaces in a URL must be replaced with the "%20" sequence. This encoding ensures that the URL is correctly interpreted by web browsers and other software applications, even if the URL contains special characters or other characters that might be interpreted incorrectly.
+</P>
+
+<P>
+In HTML, URLs are typically used to link to other pages or resources on the web. By encoding the URL, the HTML document can include links to resources without the risk of errors or other issues that might prevent the link from working properly.
+</P>
+
+<P>
+Overall, URL encoding is an important part of web development and is used to ensure that web pages and other online resources are displayed and interpreted correctly across different platforms and software applications.
+</P>
+
+# 23. Does a `<!DOCTYPE html>` tag is a HTML tag?
+
+The `<!DOCTYPE html>` declaration is not technically an HTML tag, but it is a crucial element in an HTML document. It is actually an instruction to the web browser that tells it which version of HTML the document is written in. This is important because different versions of HTML have different rules and syntax, and the web browser needs to know which version of HTML is being used in order to properly render the page.
+
+The `<!DOCTYPE html>` declaration is often placed at the beginning of an HTML document before the `<html>` tag, and it is considered a part of the document's metadata. It is not a visible part of the page, but it is still an essential element in HTML coding.
+
+# 24. What is `<datalist>` tag?
+
+The `<datalist>` tag is an HTML element that is used to provide a pre-defined list of options for an input field. It is often used in conjunction with the `<input>` tag to create an input field with a drop-down list of selectable options.
+
+The options in the `<datalist>` tag are defined using the `<option>` tag, just like a regular select menu. The user can then select an option from the list or type their own value into the input field. The datalist is not a form control itself, but rather a list of options that can be used to assist with input.
+
+Here is an example of how to use the `<datalist>` tag:
+
+```
+<label for="fruit">Choose a fruit:</label>
+<input list="fruits" id="fruit" name="fruit">
+<datalist id="fruits">
+  <option value="Apple">
+  <option value="Banana">
+  <option value="Cherry">
+  <option value="Date">
+  <option value="Grape">
+</datalist>
+```
+
+In this example, the `<datalist>` tag has an ID of "fruits", and the associated input field has a "list" attribute with a value of "fruits". When the user types in the input field, a drop-down list of fruit options will appear based on the options defined in the datalist. The user can then select one of the options, or type in their own value.
+
+# 25. What is the use of `<details>` and `<summary>` tag?
+
+The `<details>` and `<summary>` tags are HTML elements that are used together to create an interactive disclosure widget, also known as an accordion. This allows the user to expand or collapse content based on their interests.
+
+The `<details>` tag is used to wrap a section of content that can be expanded or collapsed, and the `<summary>` tag is used to provide a title or summary for the content.
+
+Here is an example of how to use the `<details>` and `<summary>` tags:
+
+```
+<details>
+  <summary>Click to show more</summary>
+  <p>Here is some additional content that can be expanded or collapsed.</p>
+</details>
+```
+
+In this example, the user will initially see the summary, "Click to show more." When the user clicks on the summary, the content inside the `<details>` tag will be revealed, including the paragraph of additional content.
+
+The `<details>` and `<summary>` tags are especially useful for providing more information or context about a particular topic, without cluttering the page with too much content. They are also helpful for organizing content in a way that is easy for users to navigate and interact with.
+
+# 26. What is `<button>` tag?
+
+The `<button>` tag is an HTML element that is used to create clickable buttons on a web page. When a user clicks on a button, a specified action or behavior is triggered, such as submitting a form, navigating to another page, or performing some other JavaScript function.
+
+Here is an example of how to use the `<button>` tag:
+
+```
+<button>Click Me!</button>
+```
+
+Here is an example of how to use the `<figure>` and `<figcaption>` tags:
+
+# 27. What is the use of `<figure>` and `<figcaption>` tag in HTML5?
+
+The `<figure>` tag is an HTML5 element that is used to represent self-contained content, such as images, diagrams, illustrations, videos, or code snippets, that is referenced in the main content of a web page. The `<figure>` element is often used in conjunction with the `<figcaption>` element, which provides a caption or title for the content.
+
+The `<figcaption>` tag is an HTML5 element that is used to provide a caption or title for a `<figure>` element. The `<figure>` element is used to represent self-contained content, such as images, diagrams, illustrations, videos, or code snippets.
+
+Here is an example of how to use the `<figure>` and `<figcaption>` tags:
+
+```
+<figure>
+  <img src="image.jpg" alt="A beautiful image">
+  <figcaption>A beautiful sunset at the beach</figcaption>
+</figure>
+```
+
+In this example, the `<figure>` element contains an image, and the `<figcaption>` element provides a caption or title for the image. The src attribute of the `<img>` element specifies the URL of the image file, and the alt attribute provides alternative text for the image, which is important for accessibility and SEO.
+
+The `<figcaption>` element can contain any text, such as a description, attribution, citation, or explanation, and it can also contain other HTML elements, such as links, lists, or tables.
+
+Overall, the `<figure>` and `<figcaption>` elements are useful HTML5 elements for creating well-structured, accessible, and semantic web pages that are easy to read and navigate.
+
+# 28. What is the difference between `<progress>` and `<meter>` tag?
+
+The `<progress>` and `<meter>` tags are HTML5 elements that are used to represent the progress or status of some value or task on a web page. While they are similar in some ways, there are some key differences between the two.
+
+The `<progress>` tag is used to display a progress bar that shows the progress of a task, such as downloading a file or completing a form. It is typically used in conjunction with JavaScript to update the progress value dynamically. The value attribute is used to specify the current progress of the task, while the max attribute is used to specify the maximum value of the progress bar.
+
+Here is an example of how to use the `<progress>` tag:
+
+```
+<progress value="50" max="100"></progress>
+```
+
+In this example, the progress bar is 50% complete, as specified by the value attribute.
+
+On the other hand, the `<meter>` tag is used to display a value within a specific range, such as the temperature, the battery level, or the sound volume. It is typically used to provide feedback to the user about the status of some value. The value attribute is used to specify the current value of the meter, while the min and max attributes are used to specify the minimum and maximum values of the meter.
+
+Here is an example of how to use the `<meter>` tag:
+
+```
+<meter value="75" min="0" max="100"></meter>
+```
+
+In this example, the meter displays a value of 75, which is within the range of 0 to 100, as specified by the min and max attributes.
+
+Overall, while both tags are used to represent progress or status, the `<progress>` tag is used for tasks that have a specific end goal, while the `<meter>` tag is used to represent values within a specific range.
+
+# 29. What is the `<canvas>` element in HTML5?
+
+The `<canvas>` element is an HTML5 element that provides a drawing surface for JavaScript code on a web page. It is a rectangular area on the page where you can draw graphics, animate images, or create interactive applications.
+
+The `<canvas>` element provides a bitmap canvas that can be manipulated using JavaScript. You can draw various shapes, lines, paths, text, and images on the canvas using a set of drawing methods provided by the HTML5 Canvas API.
+
+Here is an example of how to use the `<canvas>` tag:
+
+```
+<canvas id="myCanvas" width="200" height="100"></canvas>
+```
+
+In this example, the `<canvas>` element is created with a specific width and height. You can also set the dimensions using CSS or JavaScript.
+
+To draw on the canvas, you need to use JavaScript code that interacts with the Canvas API. For example, you can draw a line on the canvas using the following code:
+
+```
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+context.beginPath();
+context.moveTo(0, 0);
+context.lineTo(200, 100);
+context.stroke();
+```
+
+In this code, the getContext() method is used to get the 2D context of the canvas, which provides a set of drawing methods. The beginPath() method starts a new path, and the moveTo() and lineTo() methods define the start and end points of a line. Finally, the stroke() method draws the line on the canvas.
+
+Overall, the `<canvas>` element is a powerful HTML5 feature that enables developers to create dynamic and interactive graphics on web pages using JavaScript.
+
+# 30. Which type of video formats are supported by HTML5?
+
+HTML5 provides native support for a few different video formats, including:
+
+- MP4 (MPEG-4 Part 14)
+- WebM (VP8 and VP9)
+- Ogg/Theora
+
+MP4 is the most widely used video format and is supported by all major browsers. WebM is an open-source format that was developed by Google and is gaining popularity, especially on the web. Ogg/Theora is an open-source format that is supported by some browsers, but its usage is not as widespread as MP4 or WebM.
+
+When using the `<video>` tag to embed video in a web page, it is recommended to provide multiple sources in different formats to ensure compatibility across different browsers. This can be achieved by including multiple `<source>` tags within the `<video>` tag, each with a different video format:
+
+```
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  <source src="video.ogv" type="video/ogg">
+</video>
+```
+
+In this example, the `<video>` tag includes three `<source>` tags, each with a different video format. The browser will automatically select the first source that it can play, based on the format support of the user's browser.
+
+# 31. Which type of audio formats are supported by HTML5?
+
+HTML5 provides native support for a few different audio formats, including:
+
+- MP3 (MPEG Audio Layer III)
+- AAC (Advanced Audio Coding)
+- Ogg/Vorbis
+
+MP3 is the most widely used audio format and is supported by all major browsers. AAC is a popular format that offers better quality at lower bitrates than MP3, and is supported by most modern browsers. Ogg/Vorbis is an open-source format that is supported by some browsers, but its usage is not as widespread as MP3 or AAC.
+
+When using the `<audio>` tag to embed audio in a web page, it is recommended to provide multiple sources in different formats to ensure compatibility across different browsers. This can be achieved by including multiple `<source>` tags within the `<audio>` tag, each with a different audio format:
+
+```
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  <source src="audio.aac" type="audio/aac">
+  <source src="audio.ogg" type="audio/ogg">
+</audio>
+```
+
+In this example, the `<audio>` tag includes three `<source>` tags, each with a different audio format. The browser will automatically select the first source that it can play, based on the format support of the user's browser.
+
+# 32. What are the different types of `<input>` in HTML?
+
+The `<input>` tag is one of the most commonly used tags in HTML, and it has several different types that can be used to create various types of form controls. Here are some of the most common types of `<input>` tags:
+
+- Text: `<input type="text">` = This type is used for single-line text input fields.
+- Password: `<input type="password">` = This type is used for password fields, where the characters are hidden.
+- Number: `<input type="number">` = This type is used for numeric input fields, with up and down arrows to increase or decrease the value.
+- Checkbox: `<input type="checkbox">` = This type is used for checkboxes, where the user can select one or more options.
+- Radio: `<input type="radio">` = This type is used for radio buttons, where the user can select one option from a group of options.
+- Date: `<input type="date">` = This type is used for date input fields, with a calendar to select the date.
+- Time: `<input type="time">` = This type is used for time input fields, with a clock to select the time.
+- Email: `<input type="email">` = This type is used for email input fields, with built-in validation for email addresses.
+- Search: `<input type="search">` = This type is used for search input fields, with a search icon and clear button.
+- File: `<input type="file">` = This type is used for file input fields, allowing users to select and upload files from their device.
+
+There are several other types of `<input>` tags, including hidden, range, color, tel, and more. Each type is designed for a specific use case, and using the appropriate type can help improve the user experience and make form input more efficient.

@@ -15,7 +15,12 @@ HTML tags are the building blocks of HTML, and they define the structure and con
 
 For example, the `<p>` tag is used to define a paragraph of text, and the `<img>` tag is used to insert an image into a web page.
 
-Here is an example of a paragraph tag: `<p>This is a paragraph of text.</p>`
+Here is an example of a paragraph tag:
+
+```
+<p>This is a paragraph of text.</p>
+```
+
 In this example, the `<p>` tag defines the beginning of a paragraph, and the `</p>` tag defines the end of the paragraph.
 
 <p>
@@ -32,7 +37,11 @@ HTML attributes are additional properties that can be added to HTML elements to 
 HTML attributes are specified in the opening tag of an HTML element, using the attribute name followed by an equals sign and the attribute value enclosed in quotes. For example, the "href" attribute is used to specify the URL of a link, and the "alt" attribute is used to provide alternative text for an image.
 </p>
 
-Here is an example of an HTML anchor tag with an "href" attribute: `<a href="https://example.com">Visit Example</a>`
+Here is an example of an HTML anchor tag with an "href" attribute:
+
+```
+<a href="https://example.com">Visit Example</a>
+```
 
 # 4. What are HTML Elements?
 
@@ -50,7 +59,11 @@ The `<marquee>` tag in HTML is used to create a scrolling text or image display 
 
 The `<marquee>` tag has several attributes that can be used to customize its behavior, such as direction, behavior, scroll amount, and scroll delay. The direction attribute specifies the direction of the scrolling, which can be either "left", "right", "up", or "down". The behavior attribute specifies the behavior of the scrolling, which can be "scroll", "slide", or "alternate".
 
-Here is an example of how to use the `<marquee>` tag: `<marquee direction="left" behavior="scroll" scrollamount="5">This text will scroll from left to right</marquee>`
+Here is an example of how to use the `<marquee>` tag:
+
+```
+<marquee direction="left" behavior="scroll" scrollamount="5">This text will scroll from left to right</marquee>
+```
 
 However, it is recommended to avoid using the `<marquee>` tag in modern web development, as it can negatively affect the accessibility and usability of a website. Instead, other technologies such as CSS animations or JavaScript can be used to achieve similar effects in a more modern and accessible way.
 

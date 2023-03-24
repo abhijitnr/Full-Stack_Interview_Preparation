@@ -296,3 +296,120 @@ There are several types of style sheets that can be used in HTML, including inli
 </p>
 
 # 15. How to create a nested webpage in HTML?
+
+Creating a nested webpage in HTML involves embedding one HTML document within another. This can be done using `<iframe>` tag, which are used to display content from another source within a webpage.
+For example:
+
+```
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>HTML Iframes example</h2>
+    <p>Use the height and width attributes to specify the size of the iframe:</p>
+
+    <iframe src="https://www.google.com/" height="300" width="400"></iframe>
+  </body>
+</html>
+```
+
+# 16. Explain the layout of HTML?
+
+The layout of HTML refers to the structure and organization of HTML elements that are used to create a web page. Here is a brief overview of the main components of the HTML layout:
+
+- HTML document type declaration: The HTML layout begins with a document type declaration, which tells the web browser which version of HTML is being used.
+- HTML tags: HTML tags are used to define the structure of the web page. Tags are enclosed in angle brackets (< >) and are used to create elements such as headings, paragraphs, lists, images, and links.
+- HTML attributes: HTML attributes are used to provide additional information about an element, such as its style or behavior. Attributes are specified within the opening tag of an element.
+- Head section: The head section of an HTML document contains information about the web page that is not displayed on the page itself. This includes the title of the page, meta tags, scripts, and links to external stylesheets.
+- Body section: The body section of an HTML document contains the visible content of the web page, including text, images, and other elements.
+- Nested elements: HTML elements can be nested within each other, creating a hierarchical structure. This allows for the creation of more complex web page layouts, such as tables and forms.
+- Comments: HTML comments can be added to the code to provide notes or reminders for the developer. Comments are enclosed within <!-- --> and are not displayed on the web page.
+
+Overall, the layout of HTML is designed to be flexible and customizable, allowing developers to create web pages that meet their specific needs and requirements.
+
+# 17. How many tags can be used to separate a section of texts?
+
+There are several tags in HTML that can be used to separate a section of text. Here are some of the most commonly used ones:
+
+- `<p>` tag: The `<p>` tag is used to separate a section of text into a paragraph. This is the most commonly used tag for separating text.
+- `<h1>` to `<h6>` tags: These tags are used to create headings of different sizes. They can be used to separate sections of text based on their importance or hierarchy.
+- `<div>` tag: The `<div>` tag is used to create a container for a section of content. This tag is often used to group related content together, such as a group of paragraphs or images.
+- `<section>` tag: The `<section>` tag is used to define a section of content within a web page. This tag is often used to group related content together, such as a group of articles or blog posts.
+- `<blockquote>` tag: The `<blockquote>` tag is used to indicate that a section of text is a quotation or excerpt from another source.
+
+These are just a few of the tags that can be used to separate a section of text in HTML. The choice of which tag to use depends on the specific needs and requirements of the web page.
+
+# 18. What is SVG in HTML?
+
+SVG stands for Scalable Vector Graphics, and it is a markup language used to create vector-based graphics in HTML. Unlike raster images (such as JPEGs or PNGs), SVG images are resolution-independent, which means they can be scaled up or down without losing quality.
+
+SVG graphics are created using XML code and are displayed in the web page using an `<svg>` element. The `<svg>` element can be used to create a wide range of graphics, including logos, icons, charts, and maps.
+
+<p>
+SVG graphics can also be animated using CSS or JavaScript, making them a powerful tool for creating interactive and engaging web content. Additionally, because SVG graphics are created using text-based code, they can be easily edited and customized using a text editor or graphics software.
+</p>
+<p>
+Overall, SVG is a versatile and flexible format that allows developers to create high-quality, scalable graphics that can be used in a variety of web applications.
+</p>
+
+```
+<svg width="100" height="100">
+  <rect x="10" y="10" width="80" height="80" fill="blue"/>
+  <circle cx="50" cy="50" r="30" fill="white"/>
+</svg>
+```
+
+# 19. What are empty elements?
+
+<p>
+Empty elements in HTML are elements that do not have a closing tag because they do not contain any content or nested elements. They are also known as void elements or self-closing elements.
+</p>
+
+Some examples of empty elements in HTML include:
+
+- `<img>`: Used to embed an image in a web page.
+- `<br>`: Used to create a line break.
+- `<input>`: Used to create form fields, such as text boxes and radio buttons.
+- `<meta>`: Used to provide metadata about the web page, such as keywords and descriptions.
+
+Empty elements are written using a self-closing tag, which consists of the element name followed by a forward slash and closing angle bracket. For example, the `<img>` element would be written as
+
+```
+<img src="image.png" alt="An image" />
+```
+
+It's important to note that not all elements that do not have a closing tag are empty elements. For example, the `<p>` element does not have a closing tag when followed by another `<p>` element, but it is not an empty element because it contains content between the opening and closing tags.
+
+# 20. How to make a picture of a background image of a web page?
+
+To set a picture as the background image of a web page in HTML, you can use the "background-image" property in CSS. Here's an example:
+
+- First, add a "style" tag in the head section of your HTML document to add the CSS styling:
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url("background.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- your HTML content here -->
+  </body>
+</html>
+```
+
+- In the CSS, set the "background-image" property to the URL of the image file you want to use as the background. In this example, the image file is named "background.jpg".
+- Save the HTML file and the image file in the same folder on your computer.
+- Open the HTML file in a web browser, and the image should appear as the background of the web page.
+
+<p>
+Note that the "background-image" property can be combined with other CSS properties to further customize the background, such as "background-repeat" to control how the image repeats, and "background-size" to control the size of the image.
+</p>
+<p>
+Also, keep in mind that using large images as background images can slow down the loading time of your web page, so it's important to optimize your images for web use and consider using compression techniques.
+</p>
+
+# 21. What are the entities in HTML?

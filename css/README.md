@@ -30,3 +30,5 @@ There are several ways to integrate CSS on a web page:
   ```
 
 It is important to note that the best practice is to use the external CSS method for most situations, as it separates the presentation of the website from the content, making it easier to maintain and update.
+
+# 3.

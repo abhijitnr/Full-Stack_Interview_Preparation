@@ -8,3 +8,11 @@
 - React
 - Node.js
 - DSA.
+
+## These are the installation steps to get it on your computer
+
+1. To clone the repository, use the command provided below.
+
+   ```
+   git clone https://github.com/abhijitnr/Full-Stack_Interview_Preparation.git
+   ```

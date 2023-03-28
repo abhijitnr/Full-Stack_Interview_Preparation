@@ -116,3 +116,5 @@ In CSS, there are several types of selectors that allow you to target and style 
 - Pseudo-element selectors: These selectors target specific parts of an element, such as the first letter or line of a paragraph. For example, the `"::before"` selector targets the content that appears before an element.
 
 By using these different types of selectors, you can create targeted and specific styles for your web pages.
+
+# 8.

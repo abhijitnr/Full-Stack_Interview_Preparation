@@ -93,7 +93,7 @@ These frameworks can help developers to create responsive, consistent, and visua
 
 - Pseudo-element selectors: Pseudo-element selectors allow you to target and style specific parts of an element, such as the first letter or line of a paragraph. For example, you can use the `"::first-letter"` selector to apply styles to the first letter of a paragraph.
 
-- ttribute selectors: Attribute selectors allow you to select elements based on their attributes, such as their `"href"` or `"src"` values. For example, you can use the `"[target=_blank]"` selector to target all links that open in a new window.
+- Attribute selectors: Attribute selectors allow you to select elements based on their attributes, such as their `"href"` or `"src"` values. For example, you can use the `"[target=_blank]"` selector to target all links that open in a new window.
 
 By combining these different categories of CSS selectors, you can create highly specific and targeted styles for your web pages.
 
@@ -117,4 +117,75 @@ In CSS, there are several types of selectors that allow you to target and style 
 
 By using these different types of selectors, you can create targeted and specific styles for your web pages.
 
-# 8.
+# 8. What is universal selector?
+
+The universal selector is a special CSS selector that selects all elements in an HTML document. It is denoted by the asterisk symbol `(*)`. When the universal selector is used in a CSS rule, it applies that rule to all elements in the document, regardless of their type, class, or ID.
+
+For example, the following CSS rule sets the font size of all elements in the document to 16 pixels:
+
+```
+* {
+  font-size: 16px;
+}
+```
+
+The universal selector can be useful in certain situations, such as when you want to apply a style to all elements on a page or when you need to override a previously applied style.
+
+However, it's important to use the universal selector with caution, as it can slow down page rendering and make it harder to maintain your CSS code. It's generally a better practice to use more specific selectors to target specific elements when possible.
+
+# 9. What is meant by RGB stream?
+
+<p>
+RGB stream refers to a video or image signal format that separates the color information of an image into three separate channels representing red, green, and blue color components. These components are then transmitted or stored as separate data streams.
+</p>
+
+<p>
+In an RGB stream, each pixel of an image is represented by three values, one for each color component. These values are typically expressed as 8-bit integers, with a range of 0 to 255 for each component, which can be combined to produce over 16 million possible colors.
+</p>
+
+<p>
+The RGB color model is widely used in digital imaging and video applications, including computer displays, digital cameras, and video game consoles. It provides a high degree of color accuracy and flexibility, allowing for precise control over color balance and saturation.
+</p>
+
+<p>
+When an RGB stream is displayed on a screen or monitor, the red, green, and blue color components are combined to produce the final image. This is known as additive color mixing, where the colors of light are added together to create a wider range of colors than can be achieved with any single color component.
+</p>
+
+# 10. What are the different types of color code in CSS?
+
+In CSS, there are several different ways to specify colors using color codes. Here are the most commonly used color codes in CSS:
+
+- Hexadecimal Color Codes: This is a 6-digit code that represents the amount of red, green, and blue in a color. Each digit can be a value between 0 and F, representing values from 0 to 255 in decimal. For example, `#FF0000` is red, `#00FF00` is green, and `#0000FF` is blue.
+
+- RGB Color Codes: This code represents the amount of red, green, and blue in a color as decimal values between 0 and 255. For example, `rgb(255, 0, 0)` is red, `rgb(0, 255, 0)` is green, and `rgb(0, 0, 255)` is blue.
+
+- RGBA Color Codes: This is similar to RGB, but with an additional alpha channel that represents the opacity of the color. The alpha channel value can range from 0 (fully transparent) to 1 (fully opaque). For example, `rgba(255, 0, 0, 0.5)` represents a semi-transparent red color.
+
+- HSL Color Codes: This code represents the color using hue, saturation, and lightness values. Hue is represented as an angle between 0 and 360 degrees, while saturation and lightness are represented as percentages between 0% and 100%. For example, `hsl(0, 100%, 50%)` is red, `hsl(120, 100%, 50%)` is green, and `hsl(240, 100%, 50%)` is blue.
+
+- HSLA Color Codes: This is similar to HSL, but with an additional alpha channel that represents the opacity of the color. The alpha channel value can range from 0 (fully transparent) to 1 (fully opaque). For example, `hsla(0, 100%, 50%, 0.5)` represents a semi-transparent red color.
+
+These color codes can be used in CSS to specify colors for text, backgrounds, borders, and other elements on a web page.
+
+# 11. What is the use of ruleset?
+
+In CSS, a ruleset is a collection of CSS declarations that are applied to one or more HTML elements on a web page. The ruleset consists of a selector and a block of declarations enclosed in curly braces.
+
+The selector in a ruleset specifies which HTML element or elements the declarations in the block will apply to. For example, the following ruleset sets the font color and size for all paragraphs on a web page:
+
+```
+p {
+  color: blue;
+  font-size: 16px;
+}
+```
+
+In this example, the selector is `"p"`, which means that the font color and size declarations will be applied to all `<p>` elements on the page.
+
+The use of rulesets in CSS allows you to define a set of styles once and apply them to multiple elements on a web page. This saves time and effort compared to specifying individual styles for each element.
+
+Rulesets can also be used to override or modify existing styles on a web page. By using more specific selectors or adding !important to a declaration, you can override styles that have been applied to an element through other rulesets or inline styles.
+
+Overall, the use of rulesets is essential for controlling the visual appearance of HTML elements on a web page using CSS.
+
+# 12.

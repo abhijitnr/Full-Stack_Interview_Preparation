@@ -401,3 +401,73 @@ In CSS , there are different units used to define lengths, sizes, and other valu
 - Points (pt), picas (pc): These units define the size based on the physical size of the screen or printer.
 
 It's important to choose the appropriate unit based on the context of your design and the purpose of your element.
+
+# 20. What do you mean by important property in CSS?
+
+In CSS, an important property is a keyword that can be added to a CSS declaration to give it a higher priority over other declarations that might be affecting the same element. This means that if there are conflicting styles applied to an element, the declaration with the `!important` keyword will be given the highest priority and take precedence over the others.
+
+Here's an example:
+
+```
+p {
+  color: blue !important;
+}
+
+p {
+  color: red;
+}
+```
+
+In this example, the text color of all `p` elements will be blue because the first declaration has the `!important` keyword, giving it higher priority than the second declaration.
+
+While using the `!important` keyword can be helpful in some cases, it's generally recommended to use it sparingly and only when necessary, as overuse of the `!important` keyword can make it harder to maintain and update your CSS code.
+
+# 21. What is the box-shadow property in CSS?
+
+The `box-shadow` property in CSS is used to add a shadow effect to an HTML element. It is a shorthand property that allows you to set multiple values at once, including the color, size, blur radius, and position of the shadow.
+
+The syntax for the `box-shadow` property is as follows:
+
+```
+box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color];
+```
+
+Each value is optional, but you must include at least one value to use the property. Here is an explanation of each value:
+
+- `[horizontal offset]` : Specifies the horizontal distance between the element and the shadow. A positive value moves the shadow to the right, and a negative value moves it to the left.
+- `[vertical offset]` : Specifies the vertical distance between the element and the shadow. A positive value moves the shadow downwards, and a negative value moves it upwards.
+- `[blur radius]` : Specifies the amount of blur applied to the shadow. A larger value creates a more blurred shadow.
+- `[spread radius]` : Specifies the size of the shadow. A larger value makes the shadow larger than the element itself.
+- `[color]`: Specifies the color of the shadow.
+
+Here is an example of how to use the `box-shadow` property:
+
+```
+div {
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+}
+```
+
+This will create a shadow that is 2 pixels to the right and 2 pixels downwards, with a blur radius of 5 pixels and a size of 1 pixel. The shadow color is set to a semi-transparent black color.
+
+# 22. What is the opacity property in CSS?
+
+The `opacity` property in CSS is used to control the transparency of an HTML element. It specifies the degree to which the element is opaque or transparent, with values ranging from 0 (completely transparent) to 1 (completely opaque).
+
+The syntax for the `opacity` property is as follows:
+
+```
+opacity: value;
+```
+
+The `value` can be a number between 0 and 1, where 0 is completely transparent and 1 is completely opaque. Intermediate values like 0.5 make the element semi-transparent.
+
+Here is an example of how to use the `opacity` property:
+
+```
+div {
+  opacity: 0.5;
+}
+```
+
+This will make the div element semi-transparent, with a transparency level of 50%.

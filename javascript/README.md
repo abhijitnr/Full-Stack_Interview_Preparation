@@ -61,4 +61,57 @@ Hoisting can occur in two ways:
 It is important to note that hoisting can sometimes cause unexpected behavior in your code, so it is best practice to always declare variables and functions at the top of their scope to avoid any potential issues.
 </p>
 
-# 5.
+# 5. What do you mean by undefined in JavaScript?
+
+<p>
+In JavaScript, `undefined` is a primitive value that is automatically assigned to a variable or property that has been declared but has not been assigned a value. It is also returned by functions that do not explicitly return a value.
+</p>
+For example, consider the following code:
+
+```
+let x; // x is declared but not assigned a value
+console.log(x); // logs "undefined" to the console
+```
+
+<p>
+In this case, `x` is declared as a variable but is not assigned a value. When `console.log(x)` is called, the value of `x` is `undefined`, which is printed to the console.
+</p>
+<p>
+The `undefined` value is distinct from the `null` value, which is an explicit value that can be assigned to a variable or property to indicate the absence of any object value.
+</p>
+<p>
+It's important to be aware of `undefined` when writing JavaScript code, as attempting to access a property or method of an undefined value will result in a runtime error. To avoid this, you can use conditional statements or optional chaining to check for `undefined` values before accessing their properties or methods.
+</p>
+
+# 6. What do you mean by scope in JavaScript?
+
+<p>
+In JavaScript, scope refers to the set of variables, functions, and objects that are accessible in a particular section of code. In other words, scope determines the visibility and accessibility of variables and functions in your code.
+</p>
+There are two main types of scope in JavaScript:
+
+- Global scope : Variables declared outside of any function or block are considered to have global scope. These variables can be accessed from anywhere in the code, including inside functions and blocks.
+
+- Local scope : Variables declared inside a function or block are considered to have local scope. These variables can only be accessed from within the function or block in which they are defined.
+
+<p>
+It's important to be aware of scope when writing JavaScript code, as it can affect the behavior of your program. For example, if you have two variables with the same name, but one is defined in the global scope and the other is defined in a local scope, they will be two separate variables with different values.
+</p>
+
+# 7. What is lexical environment in JavaScript?
+
+<p>
+In JavaScript, a lexical environment is a structure that holds identifiers (variables, functions) and their values, as well as references to any parent lexical environments.
+</p>
+<p>
+A lexical environment is created whenever a function is invoked or a new block (e.g. an if statement, a loop, or a function body) is entered. The lexical environment is responsible for keeping track of the variables and functions defined in that function or block and providing a scope for them.
+</p>
+<p>
+When a variable or function is referenced in JavaScript, the interpreter first looks for it within the current lexical environment. If it's not found, it searches the parent lexical environment, continuing up the chain until it reaches the global environment.
+</p>
+<p>
+Each time a new function is created, a new lexical environment is created along with it, which has access to the parent environment's variables and functions. This is known as lexical scoping, which is a way to determine the scope of an identifier based on its location in the source code.
+</p>
+<p>
+Understanding lexical environments is important in JavaScript because it allows you to understand how variables and functions are scoped and how they behave within different functions and blocks.
+</p>

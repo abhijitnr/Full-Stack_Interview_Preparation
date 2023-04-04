@@ -115,3 +115,69 @@ Each time a new function is created, a new lexical environment is created along 
 <p>
 Understanding lexical environments is important in JavaScript because it allows you to understand how variables and functions are scoped and how they behave within different functions and blocks.
 </p>
+
+# 8. What is scope chain in JavaScript?
+
+<p>
+In JavaScript, the scope chain is a hierarchical chain of lexical environments that are searched for variables and functions when they are referenced within a function.
+</p>
+
+<p>
+When a variable or function is referenced within a function, the JavaScript engine searches the current lexical environment for the variable or function. If it's not found, the engine then looks in the parent environment, and continues up the chain until it finds the variable or function, or until it reaches the global environment.
+</p>
+
+<p>
+The scope chain is created by the nested structure of lexical environments, with each nested function or block creating a new environment that is linked to its parent environment. This chain of environments creates a hierarchical structure that determines the scope of variables and functions within a function.
+</p>
+
+<p>
+It's important to understand the scope chain in JavaScript because it determines the visibility and accessibility of variables and functions within a function. If a variable or function is defined in a higher-level lexical environment, it can be accessed within nested functions or blocks. However, if it's defined within a nested function or block, it can only be accessed within that function or block, and its child functions and blocks.
+</p>
+
+<p>
+Overall, the scope chain plays an important role in the scoping rules of JavaScript, and understanding it is key to writing effective and maintainable code.
+</p>
+
+# 9. What is Temporal Dead Zone in JavaScript?
+
+<p>
+In JavaScript, the Temporal Dead Zone (TDZ) is a behavior that occurs when trying to access a variable that has been declared with `let` or `const` but has not yet been initialized.
+</p>
+
+<p>
+During the TDZ, attempting to access the variable will result in a `ReferenceError`. The TDZ begins at the start of the scope where the variable is declared and lasts until the point where the variable is initialized.
+</p>
+
+For example:
+
+```
+console.log(myVariable); // Throws a ReferenceError
+
+let myVariable = 'Hello World';
+```
+
+<p>
+In the code above, trying to access the `myVariable` before it has been initialized will throw a `ReferenceError` because it is still in the TDZ.
+</p>
+
+<p>
+This behavior is intended to prevent developers from accessing uninitialized variables and ensure that they are properly initialized before being used. It's important to be aware of the TDZ when working with `let` and `const` variables in JavaScript.
+</p>
+
+# 10. What are the different types of errors in JavaScript?
+
+<p>
+In JavaScript, there are several types of errors that can occur during the execution of a program. Some of the most common types of errors are:
+</p>
+
+- Syntax errors: These occur when there is a mistake in the syntax of the code. For example, if a variable is declared with an invalid name or if a function is not properly closed with a curly brace.
+
+- Runtime errors: These occur when the code is being executed and something unexpected happens, such as trying to access a property of an undefined object or dividing by zero.
+
+- Logical errors: These occur when the code runs without errors, but the output is not what was expected. This can happen if there is a mistake in the logic of the code or if the program is not properly handling edge cases.
+
+- Type errors: These occur when an operation or function is performed on a value of the wrong type. For example, trying to add a number to a string or call a non-function value as a function.
+
+<p>
+It's important to understand the different types of errors in JavaScript so that you can properly handle them in your code and write more robust programs. You can use debugging tools like the console and breakpoints to help identify and fix errors.
+</p>

@@ -22,7 +22,9 @@ The Execution Context consists of two components: the `Memory Component` and the
 - `Code Component` : The Code Component is the place where all JavaScript code should be executed.
 
 <p>
+
 The memory component is known as the `"variable environment"`, and the code component is known as the `"thread of execution"`.
+
 </p>
 
 # 3. What is call stack in JavaScript?
@@ -64,7 +66,9 @@ It is important to note that hoisting can sometimes cause unexpected behavior in
 # 5. What do you mean by undefined in JavaScript?
 
 <p>
+
 In JavaScript, `undefined` is a primitive value that is automatically assigned to a variable or property that has been declared but has not been assigned a value. It is also returned by functions that do not explicitly return a value.
+
 </p>
 For example, consider the following code:
 
@@ -74,13 +78,19 @@ console.log(x); // logs "undefined" to the console
 ```
 
 <p>
+
 In this case, `x` is declared as a variable but is not assigned a value. When `console.log(x)` is called, the value of `x` is `undefined`, which is printed to the console.
+
 </p>
 <p>
+
 The `undefined` value is distinct from the `null` value, which is an explicit value that can be assigned to a variable or property to indicate the absence of any object value.
+
 </p>
 <p>
+
 It's important to be aware of `undefined` when writing JavaScript code, as attempting to access a property or method of an undefined value will result in a runtime error. To avoid this, you can use conditional statements or optional chaining to check for `undefined` values before accessing their properties or methods.
+
 </p>
 
 # 6. What do you mean by scope in JavaScript?
@@ -141,11 +151,15 @@ Overall, the scope chain plays an important role in the scoping rules of JavaScr
 # 9. What is Temporal Dead Zone in JavaScript?
 
 <p>
+
 In JavaScript, the Temporal Dead Zone (TDZ) is a behavior that occurs when trying to access a variable that has been declared with `let` or `const` but has not yet been initialized.
+
 </p>
 
 <p>
+
 During the TDZ, attempting to access the variable will result in a `ReferenceError`. The TDZ begins at the start of the scope where the variable is declared and lasts until the point where the variable is initialized.
+
 </p>
 
 For example:
@@ -157,11 +171,15 @@ let myVariable = 'Hello World';
 ```
 
 <p>
+
 In the code above, trying to access the `myVariable` before it has been initialized will throw a `ReferenceError` because it is still in the TDZ.
+
 </p>
 
 <p>
+
 This behavior is intended to prevent developers from accessing uninitialized variables and ensure that they are properly initialized before being used. It's important to be aware of the TDZ when working with `let` and `const` variables in JavaScript.
+
 </p>
 
 # 10. What are the different types of errors in JavaScript?
@@ -185,7 +203,9 @@ It's important to understand the different types of errors in JavaScript so that
 # 11. What is a block in JavaScript?
 
 <p>
+
 In JavaScript, a block is a set of statements enclosed in curly braces `{}`. A block is used to group together multiple statements into a single unit, which can be treated as a single entity in terms of scope and control flow.
+
 </p>
 
 For example, consider the following code:
@@ -203,7 +223,9 @@ In this code, the curly braces enclose the statements to execute based on whethe
 </p>
 
 <p>
+
 Similarly, a block can also be used in loops, functions, and other constructs in JavaScript to group together statements that should be executed as a single unit. For instance, the following code demonstrates a `for` loop that uses a block to group together multiple statements that should be executed for each iteration:
+
 </p>
 
 ```
@@ -220,11 +242,15 @@ In this example, the curly braces enclose the statements that should be executed
 # 12. What is block scope in JavaScript?
 
 <p>
+
 Block scope is a feature in JavaScript that defines the visibility or accessibility of variables and functions within a block of code. A block in JavaScript is defined by a set of curly braces `{}` that encloses a group of statements.
+
 </p>
 
 <p>
+
 Variables declared using `let` or `const` within a block are only accessible within that block and its nested blocks, but not outside of it. This means that they have block-level scope. On the other hand, variables declared using `var` have function-level scope, which means they are accessible within the entire function in which they are declared.
+
 </p>
 For example, consider the following code:
 
@@ -248,7 +274,9 @@ myFunction();
 ```
 
 <p>
+
 In this code, `x`, `y`, and `z` are declared with different types of variable declarations. Within the block of the `if` statement, new variables with the same names are declared using `let` and `const`. When `console.log` is called within the `if` block, it outputs the values of the new variables, while when `console.log` is called outside the if block, it outputs the value of the var variable, which was modified within the `if` block. This demonstrates the difference in scoping between the `var` variable and the `let` and `const` variables.
+
 </p>
 
 # 13. What is Shadowing in JavaScript?
@@ -273,7 +301,9 @@ console.log(x); // output: 1
 ```
 
 <p>
-In this code, there are two variables named `x. The outer `x` variable is declared with a value of `1`. The inner `x` variable is declared within the `myFunction` function with a value of 2. When `myFunction` is called and `console.log` is executed within the function, it outputs the value of the inner `x` variable, which is `2`. When `console.log` is executed outside the function, it outputs the value of the outer `x` variable, which is `1`.
+
+In this code, there are two variables named `x`. The outer `x` variable is declared with a value of `1`. The inner `x` variable is declared within the `myFunction` function with a value of `2`. When `myFunction` is called and `console.log` is executed within the function, it outputs the value of the inner `x` variable, which is `2`. When `console.log` is executed outside the function, it outputs the value of the outer `x` variable, which is `1`.
+
 </p>
 
 Shadowing can also occur when using nested blocks. Consider the following code:
@@ -295,7 +325,39 @@ console.log(x); // output: 1
 ```
 
 <p>
+
 In this code, there are three variables named `x`. The outer `x` variable is declared with a value of `1`. The first inner `x` variable is declared within the first `if` block with a value of `2`. The second inner `x` variable is declared within the nested `if` block with a value of `3`. When `console.log` is executed within each block, it outputs the value of the corresponding `x` variable. When `console.log` is executed outside of all blocks, it outputs the value of the outer `x` variable.
+
 </p>
 
-# 14.
+# 14. What is the Closures in JavaScript?
+
+<p>
+In JavaScript, a closure is created when a function is defined inside another function, and the inner function has access to the variables and parameters of the outer function. The inner function can access these variables even after the outer function has returned.
+</p>
+
+<p>
+Closures are a powerful feature of JavaScript that allow for encapsulation and data privacy. They are commonly used in asynchronous programming, event handling, and in creating modules and libraries.
+</p>
+Here's an example of a closure in JavaScript:
+
+```
+function outerFunction() {
+  const outerVariable = 'Hello';
+
+  function innerFunction() {
+    console.log(outerVariable);
+  }
+
+  return innerFunction;
+}
+
+const closure = outerFunction();
+closure(); // logs 'Hello'
+```
+
+<p>
+
+In this example, `outerFunction` creates a variable outerVariable and a function `innerFunction`. `innerFunction` has access to outerVariable due to the closure. When `outerFunction` is called and returns `innerFunction`, the variable closure is assigned the value of `innerFunction`. When closure is called, it logs the value of outerVariable which is still accessible due to the closure.
+
+</p>

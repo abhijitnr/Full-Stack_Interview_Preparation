@@ -181,3 +181,121 @@ In JavaScript, there are several types of errors that can occur during the execu
 <p>
 It's important to understand the different types of errors in JavaScript so that you can properly handle them in your code and write more robust programs. You can use debugging tools like the console and breakpoints to help identify and fix errors.
 </p>
+
+# 11. What is a block in JavaScript?
+
+<p>
+In JavaScript, a block is a set of statements enclosed in curly braces `{}`. A block is used to group together multiple statements into a single unit, which can be treated as a single entity in terms of scope and control flow.
+</p>
+
+For example, consider the following code:
+
+```
+if (condition) {
+  // statements to execute if condition is true
+} else {
+  // statements to execute if condition is false
+}
+```
+
+<p>
+In this code, the curly braces enclose the statements to execute based on whether the condition is true or false. These statements together form a block.
+</p>
+
+<p>
+Similarly, a block can also be used in loops, functions, and other constructs in JavaScript to group together statements that should be executed as a single unit. For instance, the following code demonstrates a `for` loop that uses a block to group together multiple statements that should be executed for each iteration:
+</p>
+
+```
+for (let i = 0; i < 10; i++) {
+  // statements to execute on each iteration
+  // ...
+}
+```
+
+<p>
+In this example, the curly braces enclose the statements that should be executed on each iteration of the loop, forming a block.
+</p>
+
+# 12. What is block scope in JavaScript?
+
+<p>
+Block scope is a feature in JavaScript that defines the visibility or accessibility of variables and functions within a block of code. A block in JavaScript is defined by a set of curly braces `{}` that encloses a group of statements.
+</p>
+
+<p>
+Variables declared using `let` or `const` within a block are only accessible within that block and its nested blocks, but not outside of it. This means that they have block-level scope. On the other hand, variables declared using `var` have function-level scope, which means they are accessible within the entire function in which they are declared.
+</p>
+For example, consider the following code:
+
+```
+function myFunction() {
+  var x = 1;
+  let y = 2;
+  const z = 3;
+
+  if (true) {
+    var x = 4; // same variable x as above
+    let y = 5; // different variable y than above
+    const z = 6; // different variable z than above
+    console.log(x, y, z); // output: 4 5 6
+  }
+
+  console.log(x, y, z); // output: 4 2 3
+}
+
+myFunction();
+```
+
+<p>
+In this code, `x`, `y`, and `z` are declared with different types of variable declarations. Within the block of the `if` statement, new variables with the same names are declared using `let` and `const`. When `console.log` is called within the `if` block, it outputs the values of the new variables, while when `console.log` is called outside the if block, it outputs the value of the var variable, which was modified within the `if` block. This demonstrates the difference in scoping between the `var` variable and the `let` and `const` variables.
+</p>
+
+# 13. What is Shadowing in JavaScript?
+
+<p>
+In JavaScript, shadowing occurs when a variable declared in an inner scope has the same name as a variable declared in an outer scope. When this happens, the inner variable "shadows" or overrides the outer variable, making it inaccessible within the inner scope.
+</p>
+
+For example, consider the following code:
+
+```
+let x = 1;
+
+function myFunction() {
+  let x = 2;
+  console.log(x); // output: 2
+}
+
+myFunction();
+
+console.log(x); // output: 1
+```
+
+<p>
+In this code, there are two variables named `x. The outer `x` variable is declared with a value of `1`. The inner `x` variable is declared within the `myFunction` function with a value of 2. When `myFunction` is called and `console.log` is executed within the function, it outputs the value of the inner `x` variable, which is `2`. When `console.log` is executed outside the function, it outputs the value of the outer `x` variable, which is `1`.
+</p>
+
+Shadowing can also occur when using nested blocks. Consider the following code:
+
+```
+let x = 1;
+
+if (true) {
+  let x = 2;
+  console.log(x); // output: 2
+
+  if (true) {
+    let x = 3;
+    console.log(x); // output: 3
+  }
+}
+
+console.log(x); // output: 1
+```
+
+<p>
+In this code, there are three variables named `x`. The outer `x` variable is declared with a value of `1`. The first inner `x` variable is declared within the first `if` block with a value of `2`. The second inner `x` variable is declared within the nested `if` block with a value of `3`. When `console.log` is executed within each block, it outputs the value of the corresponding `x` variable. When `console.log` is executed outside of all blocks, it outputs the value of the outer `x` variable.
+</p>
+
+# 14.

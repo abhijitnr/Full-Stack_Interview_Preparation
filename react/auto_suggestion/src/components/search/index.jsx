@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
+
 import "./index.css";
 
 const Search = (props) => {
   const { placeholder, onValueChange } = props;
+
   const [value, setValue] = useState("");
   const [searchText, setSearchText] = useState("");
   const [suggestion, setSuggestion] = useState([]);

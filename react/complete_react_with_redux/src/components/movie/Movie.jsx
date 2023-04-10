@@ -13,6 +13,7 @@ const Movie = () => {
       <div className="movies">
         {movies.map((item) => (
           <MovieCard
+            key={item.imdbID}
             movieId={item.imdbID}
             poster={item.Poster}
             title={item.Title}

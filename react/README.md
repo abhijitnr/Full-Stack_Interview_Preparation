@@ -144,4 +144,94 @@ Components can also be composed together to create more complex user interfaces.
 By breaking down user interfaces into smaller, reusable components, React makes it easier to build and maintain large-scale applications.
 </p>
 
-# 5.
+# 5. What is props in React?
+
+<p>
+In React, "props" (short for properties) is a way to pass data from a parent component to a child component.
+</p>
+
+<p>
+When a React component is rendered, it can receive a set of "props" as an object, which contains key-value pairs of data. These props can be accessed within the component's code and used to control its behavior and output.
+</p>
+Here's an example of how props might be used in a React component:
+
+```
+function MyComponent(props) {
+  return (
+    <div>
+      <h1>{props.title}</h1>
+      <p>{props.text}</p>
+    </div>
+  );
+}
+
+<MyComponent title="My Title" text="Some text goes here." />
+```
+
+In this example, `MyComponent` is a function component that accepts a set of props (in this case, `title` and `text`). These props are then used within the component's code to render a heading and paragraph of text. When the component is used elsewhere in the code, the props are passed in as attributes, like `title="My Title"` and `text="Some text goes here."`.
+
+# 6. What are the two different types of import/export in React?
+
+In React, there are two different ways to use the `import` and `export` statements: default exports and named exports.
+
+- Default exports : A default export allows you to export one item per module as the "default" export. This is done using the `export default` statement. When importing a default export, you can use any name you like for the imported item. Here's an example:
+
+  ```
+  // file1.js
+  const myValue = 42;
+  export default myValue;
+
+  // file2.js
+  import myValue from './file1.js';
+  console.log(myValue); // output: 42
+  ```
+
+  In this example, we're exporting a single value (`myValue`) as the default export of `file1.js`. In `file2.js`, we're importing that value using the name `myValue`.
+
+- Named exports : A named export allows you to export multiple items per module with specific names. This is done using the `export` statement. When importing named exports, you must use the exact same name as the exported item. Here's an example:
+
+  ```
+  // file1.js
+  export const foo = 'bar';
+  export const baz = 42;
+
+  // file2.js
+  import { foo, baz } from './file1.js';
+  console.log(foo, baz); // output: bar 42
+  ```
+
+  In this example, we're exporting two values (`foo` and `baz`) as named exports of `file1.js`. In `file2.js`, we're importing those values using their exact names (`foo` and `baz`). Note that we're using curly braces (`{}`) around the imported names to indicate that they're named exports.
+
+# 7. What do you mean by ternary operator in React?
+
+In React, a ternary operator is a shorthand way of writing an `if-else` statement that allows you to conditionally render a component or a part of a component based on a boolean expression.
+
+The ternary operator takes three operands: a condition, a value to return if the condition is true, and a value to return if the condition is false. The syntax for the ternary operator in React is :
+
+```
+condition ? trueValue : falseValue
+```
+
+Here, `condition` is the expression that you want to evaluate, `trueValue` is the value that is returned if the condition is true, and `falseValue` is the value that is returned if the condition is false.
+
+For example, suppose you want to conditionally render a button in a component based on a boolean `isDisabled`. You could use the ternary operator to achieve this as follows :
+
+```
+function MyComponent(props) {
+  const isDisabled = props.isDisabled;
+
+  return (
+    <div>
+      {isDisabled ? (
+        <button disabled>Disabled</button>
+      ) : (
+        <button>Enabled</button>
+      )}
+    </div>
+  );
+}
+```
+
+In this example, if `isDisabled` is true, the first button with the `disabled` attribute will be rendered, and if it is false, the second button without the `disabled` attribute will be rendered.
+
+# 8.
